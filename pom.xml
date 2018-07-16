@@ -13,5 +13,7 @@
         <module>hello-service</module>
         <module>ribbon-consumer</module>
         <module>eureka-server</module>
+        <module>feign-consumer</module>
+        <module>hello-service-api</module>
     </modules>
 </project>
