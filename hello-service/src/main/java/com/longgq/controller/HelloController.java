@@ -19,7 +19,7 @@ public class HelloController {
     private DiscoveryClient client;
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String index()  {
+    public String index() {
         ServiceInstance instance = client.getLocalServiceInstance();
 
         //int sleepTime = new Random().nextInt(3000);
