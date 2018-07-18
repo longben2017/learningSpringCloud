@@ -16,7 +16,7 @@ public class RefactorHelloController implements HelloApiService {
 
     @Override
     public User hello(@RequestHeader String name, @RequestHeader Integer age) {
-        return new User(name,age);
+        return new User(name, age);
     }
 
     @Override

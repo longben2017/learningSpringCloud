@@ -35,12 +35,12 @@ public class ConsumerController {
         return sb.toString();
     }
 
-    @RequestMapping(value = "/feign-consumer3",method = RequestMethod.GET)
-    public String helloConsumer3(){
+    @RequestMapping(value = "/feign-consumer3", method = RequestMethod.GET)
+    public String helloConsumer3() {
         StringBuilder sb = new StringBuilder();
         sb.append(refactorHelloService.hello("MIMI")).append("\n");
-        sb.append(refactorHelloService.hello("MIMI",20)).append("\n");
-        sb.append(refactorHelloService.hello(new User("MIMI",20))).append("\n");
+        sb.append(refactorHelloService.hello("MIMI", 20)).append("\n");
+        sb.append(refactorHelloService.hello(new User("MIMI", 20))).append("\n");
         return sb.toString();
     }
 }
